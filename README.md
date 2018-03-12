@@ -3,7 +3,7 @@ A Python library to connect with [Cedro Web Feeder API](http://markets.cedrotech
 
 # Install
 ```
-    pip install https://github.com/pgrangeiro/python-cedro-client.git
+    pip install git+https://github.com/pgrangeiro/python-cedro-client.git
 ```
 
 # Tests
@@ -17,22 +17,21 @@ tox
 
     client = CedroClient()
     client.quotes.login('username', 'password')
-    client.quotes.get(['VALE3', 'BRFS3'])
->>>
+    quotes = list(client.quotes.get(['VALE3', 'BRFS3']))
+    print(quotes)
+>>> [{'symbol': 'vale3', 'timeUpdate': '...
 ```
 
 ## Get tickers latest quotes
-    Returns the latest quotations for tickers passed by parameters.
+    Returns an iterator with the latest quotations for tickers passed by parameters.
 ```
     client.quotes.get(['VALE3'])
->>>
 ```
 
 ## Get currencies latest quotes
-    Returns the latest quotations for currencies passed by parameters.
+    Returns an iterator with the latest quotations for currencies passed by parameters.
 ```
     client.currencies.get(['dolcm', 'eurcm'])
->>>
 ```
 
 ## Parsing response data from Cedro Web Feeder API
@@ -57,6 +56,5 @@ tox
 
     client = CedroClient(MyParser)
     client.quotes.login('username', 'password')
-    client.quotes.get(['', '', ''])
->>>
+    quotes = client.quotes.get(['VALE3', 'BRFS3'])
 ```
