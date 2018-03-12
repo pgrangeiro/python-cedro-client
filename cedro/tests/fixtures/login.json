@@ -1,0 +1,15 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length: ['0']
+    method: POST
+    uri: http://webfeeder.cedrofinances.com.br/SignIn?login=user&password=password
+  response:
+    body: {string: 'true'}
+    headers:
+      Date: ['Fri, 24 Nov 2017 19:49:08 GMT']
+      Server: [Apache-Coyote/1.1]
+      Set-Cookie: [JSESSIONID=B4BF19E0AE9DF5D02D6E27882CB25836; Path=/; HttpOnly]
+    status: {code: 200, message: OK}
+version: 1
