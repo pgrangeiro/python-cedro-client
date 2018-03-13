@@ -4,7 +4,7 @@ from setuptools import find_packages
 
 setup(
     name='cedro',
-    version='1.0.1',
+    version='1.0.2',
     description='Python Cedro Web Feeder API Client',
     author='Paula Grangeiro',
     author_email='contato@paulagrangeiro.com.br',

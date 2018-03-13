@@ -45,7 +45,7 @@ tox
     class MyParser:
 
         @classmethod
-        def parse(cls):
+        def parse(cls, data):
             return {
                 'ticker': data['symbol'].upper(),
                 'day_min_value': data['low'],
