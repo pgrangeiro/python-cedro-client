@@ -1,4 +1,6 @@
 # Python Cedro Client
+[![Build Status](https://travis-ci.org/pgrangeiro/python-cedro-client.svg?branch=master)](https://travis-ci.org/pgrangeiro/python-cedro-client)
+
 A Python library to connect with [Cedro Web Feeder API](http://markets.cedrotech.com/market-data/#web-feeder).
 
 # Install
